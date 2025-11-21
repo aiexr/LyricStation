@@ -4,6 +4,10 @@ A simple web app to create .lrc timed with lyrics, integrated with a display usi
 
 The web application is accessible at https://lyricstation.xyz
 
+## Screenshots 
+
+## Videos
+
 ## Development Setup
 using Node.js (version 20 or later).
 
