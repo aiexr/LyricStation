@@ -1,0 +1,55 @@
+{
+  "name": "app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.app.json --noEmit",
+    "stylecheck": "stylelint \"src/**/*.{css,scss}\"",
+    "test": "npm run lint && npm run typecheck && npm run stylecheck",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@applemusic-like-lyrics/react": "^0.1.5",
+    "bpm-detective": "^2.0.5",
+    "idb-keyval": "^6.2.0",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-new-window": "^1.0.1",
+    "web-audio-beat-detector": "^8.2.29"
+  },
+  "overrides": {
+    "react-new-window": {
+      "react": "^19.1.0",
+      "react-dom": "^19.1.0"
+    }
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.25.0",
+    "@types/react": "^19.1.2",
+    "@types/react-dom": "^19.1.2",
+    "@vitejs/plugin-react": "^4.4.1",
+    "eslint": "^9.25.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "lint-staged": "^16.1.2",
+    "prettier": "^3.5.3",
+    "sass": "^1.89.2",
+    "stylelint": "^16.20.0",
+    "stylelint-config-standard": "^38.0.0",
+    "ts-node": "^10.9.2",
+    "typescript": "~5.8.3",
+    "typescript-eslint": "^8.30.1",
+    "vite": "^6.3.5"
+  },
+  "lint-staged": {
+    "*.ts?(x)": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}

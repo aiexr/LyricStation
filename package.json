@@ -1,0 +1,17 @@
+{
+  "name": "lyricstation-root",
+  "private": true,
+  "scripts": {
+    "prepare": "simple-git-hooks",
+    "test": "cd app && npm test"
+  },
+  "devDependencies": {
+    "simple-git-hooks": "^2.13.0"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "cd app && npx lint-staged"
+  },
+  "dependencies": {
+    "react-new-window": "^1.0.1"
+  }
+}

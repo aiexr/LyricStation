@@ -1,0 +1,52 @@
+:root {
+  font-family: Roboto, "Open Sans", sans-serif;
+  line-height: 1.5;
+  color-scheme: dark;
+  color: #e0f2f1;
+  background: linear-gradient(180deg, #0f2027 0%, #203a43 50%, #2c5364 100%);
+}
+
+a {
+  font-weight: 500;
+  color: #67b7d1;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #8fd1ec;
+}
+
+body {
+  margin: 0;
+  padding: 1rem;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    color: #213547;
+    background: linear-gradient(180deg, #dbeafe 0%, #eff6ff 100%);
+  }
+  a:hover {
+    color: #0ea5e9;
+  }
+}
+
+.app-footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #cbd5e1;
+}
+
+.app-footer a {
+  color: #67b7d1;
+  text-decoration: underline;
+  margin: 0 0.25rem;
+}
